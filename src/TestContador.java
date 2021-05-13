@@ -10,9 +10,9 @@ public class TestContador {
     @Test
     //Test: los valores son los correctos
     public void TestValorCorrecto() {
-        Contador contador1 = new Contador(0, 2, 10);
+        ClassContador contador1 = new ClassContador(0, 2, 10);
 
-        aassertEquals(10, contador1.getValorFinal());
+        assertEquals(10, contador1.getValorLimite());
     }
     
 }
