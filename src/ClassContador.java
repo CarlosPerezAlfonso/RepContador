@@ -47,14 +47,22 @@ public class ClassContador {
 
     
     //Métodos
-    public int incrementarValor(int inicial, int incremento) {
-        return inicial + incremento;
+    public int incrementarValor() {
+        return getValorInicial() + getValorIncremento();
     }
     
-    public boolean comprobarLimiteSuperado(int limite) {
-        if (getValorInicial() + getValorIncremento() > limite) {
+    public boolean comprobarLimiteSuperado() {
+        if (getValorInicial() + getValorIncremento() > getValorLimite()) {
             return true;
         } else return false;
+    }
+
+    public int resetearContador() {
+        if (getValorInicial() + getValorIncremento() > getValorLimite()) {
+            return getValorInicial();
+        }
+
+        return getValorInicial() + getValorIncremento();
     }
     
 }

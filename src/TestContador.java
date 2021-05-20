@@ -32,20 +32,16 @@ public class TestContador {
         int expectedValue = 12;
         boolean limiteSuperado = true;
        
-        assertEquals(expectedValue, contador1.incrementarValor(contador1.getValorInicial(), contador1.getValorIncremento()));
-        assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado(contador1.getValorLimite()));
+        assertEquals(expectedValue, contador1.incrementarValor());
+        assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado());
     }
     
     @Test
     //Test: Resetear el contador cuando el limite sea superado
     public void TestResetearContador() {
         ClassContador contador1 = new ClassContador(0, 12, 10);
-
-        int valorContador = contador1.getValorInicial() + contador1.getValorIncremento();
-
-        contador1.resetearContador();
         
-        assertEquals(valorContador, contador1.getValorInicial());
+        assertEquals(contador1.getValorInicial(), contador1.resetearContador());
     }
 
 
