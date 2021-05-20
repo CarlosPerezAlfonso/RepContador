@@ -23,6 +23,18 @@ public class TestContador {
         assertEquals(0, contador1.getValorInicial());
         assertEquals(1, contador1.getValorIncremento());
     }
+
+    @Test
+    //Test: Incrementar valor y comprobar limite
+    public void TestValorIncrementado() {
+        ClassContador contador1 = new ClassContador(0, 12, 10);
+        
+        int expectedValue = 12;
+        boolean limiteSuperado = true;
+       
+        assertEquals(expectedValue, contador1.incrementarValor());
+        assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado());
+    }
     
 }
 
