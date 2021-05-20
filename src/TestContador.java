@@ -50,10 +50,10 @@ public class TestContador {
         ClassContador contador1 = new ClassContador(0, 5, 10);
 
         contador1.incrementarValorActual();
-        assertEquals(contador1.getValorActual(), contador1.incrementarValor());
+        assertEquals(5, contador1.incrementarValorActual());
 
         contador1.resetearCualquierMomento();
-        assertEquals(contador1.getValorInicial(), contador1);
+        assertEquals(contador1.getValorInicial(), contador1.resetearCualquierMomento());
     }
 
 

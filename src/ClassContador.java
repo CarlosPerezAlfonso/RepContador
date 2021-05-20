@@ -64,5 +64,19 @@ public class ClassContador {
 
         return getValorInicial() + getValorIncremento();
     }
+
+    public int ValorActual() {
+        return getValorInicial();
+    }
+
+    public int incrementarValorActual() {
+        return ValorActual() + getValorIncremento();
+    }
+
+    public int resetearCualquierMomento() {
+        setValorInicial(num1);
+
+        return num1;
+    }
     
 }
