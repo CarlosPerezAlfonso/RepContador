@@ -44,7 +44,17 @@ public class TestContador {
         assertEquals(contador1.getValorInicial(), contador1.resetearContador());
     }
 
+    @Test
+    //Test: Resetear en cualquier momento y conocer el valor actual
+    public void TestResetearyComprobar() {
+        ClassContador contador1 = new ClassContador(0, 5, 10);
 
+        contador1.incrementarValorActual();
+        assertEquals(contador1.getValorActual(), contador1.incrementarValor());
+
+        contador1.resetearCualquierMomento();
+        assertEquals(contador1.getValorInicial(), contador1);
+    }
 
 
 }
