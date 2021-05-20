@@ -32,8 +32,8 @@ public class TestContador {
         int expectedValue = 12;
         boolean limiteSuperado = true;
        
-        assertEquals(expectedValue, contador1.incrementarValor());
-        assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado());
+        assertEquals(expectedValue, contador1.incrementarValor(contador1.getValorInicial(), contador1.getValorIncremento()));
+        assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado(contador1.getValorLimite()));
     }
     
 }

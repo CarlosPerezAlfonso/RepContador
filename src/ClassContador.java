@@ -33,21 +33,28 @@ public class ClassContador {
         return num1;
     }
 
-    public void setValorInicial(int num1) {
-        this.num1 = num1;
+    public void setValorInicial(int inicial) {
+        this.num1 = inicial;
     }
 
     public int getValorIncremento() {
         return num2;
     }
 
-    public void setValorIncremento(int num2) {
-        this.num2 = num2;
+    public void setValorIncremento(int incremento) {
+        this.num2 = incremento;
     }
 
     
-
+    //Métodos
+    public int incrementarValor(int inicial, int incremento) {
+        return inicial + incremento;
+    }
     
-
+    public boolean comprobarLimiteSuperado(int limite) {
+        if (getValorInicial() + getValorIncremento() > limite) {
+            return true;
+        } else return false;
+    }
     
 }
