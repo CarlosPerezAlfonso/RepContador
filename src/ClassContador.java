@@ -13,15 +13,39 @@ public class ClassContador {
         this.num3 = limite;
     }
 
+    public ClassContador(int limite) {
+        this.num1 = 0;
+        this.num2 = 1;
+        this.num3 = limite;
+    }
+
     
     //Getters y setters
     public int getValorLimite() {
         return num3;
     }
 
-    public void setNum3(int limite) {
+    public void setValorLimite(int limite) {
         this.num3 = limite;
     }
+
+    public int getValorInicial() {
+        return num1;
+    }
+
+    public void setValorInicial(int num1) {
+        this.num1 = num1;
+    }
+
+    public int getValorIncremento() {
+        return num2;
+    }
+
+    public void setValorIncremento(int num2) {
+        this.num2 = num2;
+    }
+
+    
 
     
 
