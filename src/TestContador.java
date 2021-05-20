@@ -36,6 +36,21 @@ public class TestContador {
         assertEquals(limiteSuperado, contador1.comprobarLimiteSuperado(contador1.getValorLimite()));
     }
     
+    @Test
+    //Test: Resetear el contador cuando el limite sea superado
+    public void TestResetearContador() {
+        ClassContador contador1 = new ClassContador(0, 12, 10);
+
+        int valorContador = contador1.getValorInicial() + contador1.getValorIncremento();
+
+        contador1.resetearContador();
+        
+        assertEquals(valorContador, contador1.getValorInicial());
+    }
+
+
+
+
 }
 
 
